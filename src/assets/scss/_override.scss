@@ -2,8 +2,27 @@ header {
   position: relative;
   height: 720px;
   z-index: 2;
-    .margetop {
+  .margetop {
     margin-top: 80px;
+  }
+
+  li {
+    color: white;
+    font-weight: bold;
+  }
+
+  .item1 {
+    background-color: black;
+    opacity: 0.8;
+  }
+
+  .item2 {
+    background-color: #221d16;
+    opacity: 0.8;
+  }
+  .item3 {
+    background-color: #756e62;
+    opacity: 0.8;
   }
 }
 
@@ -12,7 +31,8 @@ section.sliderino {
   width: 100%;
   top: 0;
   padding-top: 450px;
-  background-color: darkgrey;
+  background-image: url(../img/slide.png);
+  background-size: cover;
   height: 720px;
   margin-bottom: 62px;
   h2 {
@@ -32,11 +52,19 @@ section.gallerie {
     margin: 0;
     margin-bottom: 20px;
     position: relative;
+
+    div {
+      height: 229px;
+      width: 410px;
+      background-color: black;
+      display: block;
+    }
   }
   figcaption {
     position: absolute;
     bottom: 20px;
     left: 40px;
+    font-weight: bold;
   }
 }
 
