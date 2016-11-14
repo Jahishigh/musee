@@ -1,0 +1,50 @@
+header {
+  position: relative;
+  height: 720px;
+  z-index: 2;
+    .margetop {
+    margin-top: 80px;
+  }
+}
+
+section.sliderino {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  padding-top: 450px;
+  background-color: darkgrey;
+  height: 720px;
+  margin-bottom: 62px;
+  h2 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 21px;
+    font-weight: bold;
+  }
+}
+
+section.gallerie {
+  padding-top: 65px;
+  margin-bottom: 125px;
+  figure {
+    margin: 0;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  figcaption {
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+  }
+}
+
+footer {
+  background-color: grey;
+  padding-top: 42px;
+  h4 {
+    font-size: 18px;
+    font-color: white;
+  }
+}
