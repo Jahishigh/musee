@@ -52,11 +52,18 @@ section.gallerie {
     margin: 0;
     margin-bottom: 20px;
     position: relative;
+    height: 229px;
 
-    div {
-      height: 229px;
+    .pinkhover {
+      display: none;
+      position: absolute;
+      background-color: #e28874;
+      opacity: 0.8;
       width: 410px;
-      background-color: black;
+      height: 229px;
+    }
+
+    figure:hover .pinkhover {
       display: block;
     }
   }
