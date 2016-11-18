@@ -38,48 +38,92 @@ section.sliderino {
   h2 {
     font-size: 36px;
     font-weight: bold;
+    z-index: 10;
   }
   h3 {
     font-size: 21px;
-    font-weight: bold;
+    font-weight: normal;
   }
 }
 
 section.gallerie {
   padding-top: 65px;
   margin-bottom: 125px;
+
   figure {
     margin: 0;
     margin-bottom: 20px;
     position: relative;
     height: 229px;
+  }
+    .filtre {
+      display: block;
+      background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+      position: absolute;
+      width: 410px;
+      height: 229px;
+      opacity: 0.5;
+    }
 
     .pinkhover {
-      display: none;
+      display: block;
       position: absolute;
       background-color: #e28874;
-      opacity: 0.8;
+      opacity: 0;
       width: 410px;
       height: 229px;
     }
 
-    figure:hover .pinkhover {
-      display: block;
+    a:hover {
+      color: white;
     }
-  }
+
+    figure:hover .pinkhover {
+      opacity: 0.8;
+      transition: opacity 0.8s;
+    }
+
+    figure:hover .filtre {
+      display: none;
+    }
+
   figcaption {
     position: absolute;
     bottom: 20px;
     left: 40px;
+    font-size: 16px;
     font-weight: bold;
+    letter-spacing: 1px;
   }
 }
 
 footer {
-  background-color: grey;
+  background-color: #343434;
   padding-top: 42px;
   h4 {
-    font-size: 18px;
-    font-color: white;
+    font-size: 14px;
+    color: white;
+    margin-top: 4px;
+  }
+
+  ul.menu {
+    margin-top: 10px;
+  }
+
+  ul li {
+    font-size: 12px;
+  }
+
+  ul li.sep {
+    color: black;
+  }
+
+  input.recherche {
+    height: 25px;
+    width: 408px;
+    background: black;
+    border: 0;
+    color: white;
+    font-size: 12px;
   }
 }
