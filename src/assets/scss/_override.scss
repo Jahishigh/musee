@@ -56,36 +56,36 @@ section.gallerie {
     position: relative;
     height: 229px;
   }
-    .filtre {
-      display: block;
-      background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
-      position: absolute;
-      width: 410px;
-      height: 229px;
-      opacity: 0.5;
-    }
+  .filtre {
+    display: block;
+    background-image:linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 1));
+    position: absolute;
+    width: 410px;
+    height: 229px;
+    opacity: 0.5;
+  }
 
-    .pinkhover {
-      display: block;
-      position: absolute;
-      background-color: #e28874;
-      opacity: 0;
-      width: 410px;
-      height: 229px;
-    }
+  .pinkhover {
+    display: block;
+    position: absolute;
+    background-color: #e28874;
+    opacity: 0;
+    width: 410px;
+    height: 229px;
+  }
 
-    a:hover {
-      color: white;
-    }
+  a:hover {
+    color: white;
+  }
 
-    figure:hover .pinkhover {
-      opacity: 0.8;
-      transition: opacity 0.8s;
-    }
+  figure:hover .pinkhover {
+    opacity: 0.8;
+    transition: opacity 0.8s;
+  }
 
-    figure:hover .filtre {
-      display: none;
-    }
+  figure:hover .filtre {
+    display: none;
+  }
 
   figcaption {
     position: absolute;
@@ -125,5 +125,12 @@ footer {
     border: 0;
     color: white;
     font-size: 12px;
+  }
+
+  input[type=text]:focus {
+    box-shadow: none;
+    border: none;
+    background-color: black;
+    color: white;
   }
 }
